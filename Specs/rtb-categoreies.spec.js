@@ -7,6 +7,11 @@ beforeEach(function(){
 });
 
 
+function getIds(data,value){
+    return _.map(_.map(data,value),function(d){
+        return _.map(d,'Id');
+    });
+}
 
 describe("Two DSPs where Accepted and Rejected Category Data are ALL different", function() {
 
@@ -17,11 +22,11 @@ describe("Two DSPs where Accepted and Rejected Category Data are ALL different",
 
 
     it("should be 4 as all 4 categories are different", function() {
-        var data = categoryDataService.TwoDSPs_AllDataDifferent()
-        var accepted = _.uniqWith(_.map(data, 'ApprovedCategories'), _.isEqual);
-        var rejected = _.uniqWith(_.map(data, 'RejectedCategories'), _.isEqual);
 
-        expect(accepted.length + rejected.length).toBe(4);
+        var data = categoryDataService.TwoDSPs_AllDataDifferent();
+        var approved = _.uniqWith(getIds(data,'ApprovedCategories'),_.isEqual);
+        var rejected = _.uniqWith(getIds(data,'RejectedCategories'),_.isEqual);
+        expect(approved.length + rejected.length).toBe(4);
     });
 
 
