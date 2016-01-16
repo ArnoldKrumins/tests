@@ -5,7 +5,8 @@
   "main": "karma.conf.js",
   "dependencies": {
     "jasmine-core": "^2.4.1",
-    "karma": "^0.13.19"
+    "karma": "^0.13.19",
+    "lodash": "^4.0.0"
   },
   "devDependencies": {},
   "scripts": {
