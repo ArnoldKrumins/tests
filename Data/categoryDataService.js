@@ -715,14 +715,195 @@ var categoryDataService = function (){
         ]
     }
 
+    ThreeDSPs_AllCreativeAttributesDifferent = function(){
 
+       return  [
+            {
+                "Id": 415,
+                "Name": "DoubleClick Bid Manager",
+                "NoUserMatchingThreshold": 0,
+                "UserMatchingThreshold": 0,
+                "CanAuctionTypeBeSet": false,
+                "AuctionType": 2,
+                "GeoFilterId": null,
+                "SiteProtection": null,
+                "OnlyRunPrivateDeals": false,
+                "ApprovedCategories": [
+                    {
+                        "Id": 2,
+                        "ParentId": 1,
+                        "Category": "Arts and Entertainment/Animation and Comics",
+                        "Selected": false,
+                        "$$hashKey": "object:216"
+                    },
+                    {
+                        "Id": 4,
+                        "ParentId": 1,
+                        "Category": "Arts and Entertainment/Awards",
+                        "Selected": false,
+                        "$$hashKey": "object:218"
+                    },
+                    {
+                        "Id": 6,
+                        "ParentId": 1,
+                        "Category": "Arts and Entertainment/Fashion and Modeling",
+                        "Selected": false,
+                        "$$hashKey": "object:220"
+                    }
+                ],
+                "RejectedCategories": [
+                    {
+                        "Id": 246,
+                        "ParentId": null,
+                        "Category": "Adult",
+                        "Selected": false,
+                        "$$hashKey": "object:984"
+                    }
+                ],
+                "BidRequestSettings": {
+                    "Id": 198,
+                    "IncludeSiteId": true,
+                    "IncludeSiteName": false,
+                    "IncludePublisherName": true,
+                    "IncludeSiteContentCategories": false,
+                    "IncludePageContentCategories": false,
+                    "IncludeIpAddress": true,
+                    "IncludeUserAgentString": true,
+                    "IncludeCountry": true,
+                    "FixedPageUrl": null,
+                    "IncludePageUrl": 0
+                },
+                "RtbCreativeAttributeIds": [
+                    1,
+                    3,
+                    5,
+                    10,
+                    12,
+                    14
+                ],
+                "Selected": true,
+                "$$hashKey": "object:31"
+            },
+            {
+                "Id": 416,
+                "Name": "AdPilot",
+                "NoUserMatchingThreshold": 0,
+                "UserMatchingThreshold": 0,
+                "CanAuctionTypeBeSet": false,
+                "AuctionType": 2,
+                "GeoFilterId": null,
+                "SiteProtection": null,
+                "OnlyRunPrivateDeals": false,
+                "ApprovedCategories": [
+                    {
+                        "Id": 53,
+                        "ParentId": 39,
+                        "Category": "Business and Industry/Metals and Mining",
+                        "Selected": false,
+                        "$$hashKey": "object:267"
+                    },
+                    {
+                        "Id": 57,
+                        "ParentId": 39,
+                        "Category": "Business and Industry/Transportation and Logistics",
+                        "Selected": false,
+                        "$$hashKey": "object:271"
+                    },
+                    {
+                        "Id": 61,
+                        "ParentId": 59,
+                        "Category": "Career and Education/Education",
+                        "Selected": false,
+                        "$$hashKey": "object:275"
+                    }
+                ],
+                "RejectedCategories": [
+                    {
+                        "Id": 27,
+                        "ParentId": 26,
+                        "Category": "Beauty and Fitness/Beauty",
+                        "Selected": false,
+                        "$$hashKey": "object:241"
+                    }
+                ],
+                "BidRequestSettings": {
+                    "Id": 199,
+                    "IncludeSiteId": true,
+                    "IncludeSiteName": false,
+                    "IncludePublisherName": true,
+                    "IncludeSiteContentCategories": false,
+                    "IncludePageContentCategories": false,
+                    "IncludeIpAddress": true,
+                    "IncludeUserAgentString": true,
+                    "IncludeCountry": true,
+                    "FixedPageUrl": null,
+                    "IncludePageUrl": 0
+                },
+                "RtbCreativeAttributeIds": [
+                    9,
+                    11,
+                    10,
+                    14,
+                    3,
+                    6,
+                    7
+                ],
+                "Selected": true,
+                "$$hashKey": "object:32"
+            },
+            {
+                "Id": 417,
+                "Name": "Adform",
+                "NoUserMatchingThreshold": 0,
+                "UserMatchingThreshold": 0,
+                "CanAuctionTypeBeSet": false,
+                "AuctionType": 2,
+                "GeoFilterId": null,
+                "SiteProtection": null,
+                "OnlyRunPrivateDeals": false,
+                "ApprovedCategories": [],
+                "RejectedCategories": [
+                    {
+                        "Id": 246,
+                        "ParentId": null,
+                        "Category": "Adult",
+                        "Selected": false
+                    }
+                ],
+                "BidRequestSettings": {
+                    "Id": 200,
+                    "IncludeSiteId": true,
+                    "IncludeSiteName": false,
+                    "IncludePublisherName": true,
+                    "IncludeSiteContentCategories": false,
+                    "IncludePageContentCategories": false,
+                    "IncludeIpAddress": true,
+                    "IncludeUserAgentString": true,
+                    "IncludeCountry": true,
+                    "FixedPageUrl": null,
+                    "IncludePageUrl": 0
+                },
+                "RtbCreativeAttributeIds": [
+                    1,
+                    3,
+                    12,
+                    14
+                ],
+                "Selected": true,
+                "$$hashKey": "object:33"
+            }
+        ]
+
+    }
 
 
     return{
         TwoDSPs_SameNumberDifferentData:TwoDSPs_SameNumberDifferentData,
         TwoDSPs_AllDataDifferent:TwoDSPs_AllDataDifferent,
         ThreeRTBs_AllDataTheSame:ThreeRTBs_AllDataTheSame,
-        ThreeRTBs_TwoTheSameOneDifferent:ThreeRTBs_TwoTheSameOneDifferent
+        ThreeRTBs_TwoTheSameOneDifferent:ThreeRTBs_TwoTheSameOneDifferent,
+        ThreeDSPs_AllCreateAttributesTheSame:ThreeDSPs_AllCreateAttributesTheSame,
+        ThreeDSPs_AllCreativeAttributesDifferent:ThreeDSPs_AllCreativeAttributesDifferent
     }
 
 }();
