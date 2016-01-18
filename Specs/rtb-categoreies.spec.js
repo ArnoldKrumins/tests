@@ -17,14 +17,14 @@ function getIds(data,value){
 describe("Two DSPs where Accepted and Rejected Category count is the same by contents different", function() {
 
     it("contains two DSPs objects", function() {
-        var data = categoryDataService.TwoDSPs_AllDataDifferent()
+        var data = fakeDataService.TwoDSPs_AllDataDifferent()
         expect(data.length).toBe(2);
     });
 
 
     it("should be 4 as all 4 categories are different", function() {
 
-        var data = categoryDataService.TwoDSPs_AllDataDifferent();
+        var data = fakeDataService.TwoDSPs_AllDataDifferent();
         var approved = _.uniqWith(getIds(data,'ApprovedCategories'),_.isEqual);
         var rejected = _.uniqWith(getIds(data,'RejectedCategories'),_.isEqual);
         expect(approved.length + rejected.length).toBe(4);
@@ -41,14 +41,14 @@ describe("Two DSPs where Accepted and Rejected Category count is the same by con
 describe("Two DSPs where Accepted and Rejected Category Data are ALL different", function() {
 
     it("contains two DSPs objects", function() {
-        var data = categoryDataService.TwoDSPs_AllDataDifferent()
+        var data = fakeDataService.TwoDSPs_AllDataDifferent()
         expect(data.length).toBe(2);
     });
 
 
     it("should be 4 as all 4 categories are different", function() {
 
-        var data = categoryDataService.TwoDSPs_AllDataDifferent();
+        var data = fakeDataService.TwoDSPs_AllDataDifferent();
         var approved = _.uniqWith(getIds(data,'ApprovedCategories'),_.isEqual);
         var rejected = _.uniqWith(getIds(data,'RejectedCategories'),_.isEqual);
         expect(approved.length + rejected.length).toBe(4);
@@ -65,13 +65,13 @@ describe("Two DSPs where Accepted and Rejected Category Data are ALL different",
 describe("Three DSPs where Accepted and Rejected Category Data is the Same", function() {
 
     it("contains three rtb objects", function() {
-        var data = categoryDataService.ThreeRTBs_AllDataTheSame()
+        var data = fakeDataService.ThreeRTBs_AllDataTheSame()
         expect(data.length).toBe(3);
     });
 
 
     it("should be 2 as all 3 categories are the same", function() {
-        var data = categoryDataService.ThreeRTBs_AllDataTheSame()
+        var data = fakeDataService.ThreeRTBs_AllDataTheSame()
         var approved = _.uniqWith(getIds(data, 'ApprovedCategories'), _.isEqual);
         var rejected = _.uniqWith(getIds(data, 'RejectedCategories'), _.isEqual);
         expect(approved.length + rejected.length).toBe(2);

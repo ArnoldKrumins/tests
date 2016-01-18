@@ -1,7 +1,7 @@
 /**
  * Created by akrumins on 15/01/2016.
  */
-var categoryDataService = function (){
+var fakeDataService = function (){
 
 
 
