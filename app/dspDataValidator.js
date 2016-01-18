@@ -13,6 +13,12 @@ var dspDataValidator = function(){
         return _.map(data,value);
     }
 
+    function getPageUrlIds(data,value){
+        return _.map(_.map(data,value),function(d){
+            return d.IncludePageUrl;
+        });
+    }
+
     return{
 
         AreAdCategoriesTheSame : function(data){
@@ -21,9 +27,13 @@ var dspDataValidator = function(){
             return (approved.length + rejected.length === 2) ? true : false;
         },
 
-
         AreCreativeAttributesTheSame : function(data){
             var result = _.uniqWith(getCreativeAttributesIds(data,'RtbCreativeAttributeIds'),_.isEqual);
+            return (result.length === 1) ? true : false;
+        },
+
+        ArePageURlsTheSame : function(data){
+            var result = _.uniqWith(getPageUrlIds(data,'BidRequestSettings'),_.isEqual);
             return (result.length === 1) ? true : false;
         }
 

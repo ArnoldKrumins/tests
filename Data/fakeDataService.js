@@ -3,9 +3,6 @@
  */
 var fakeDataService = function (){
 
-
-
-
     TwoDSPs_SameNumberDifferentData = function(){
        return  [
             {
@@ -314,7 +311,6 @@ var fakeDataService = function (){
         ]
     }
 
-
     ThreeRTBs_AllDataTheSame = function(){
 
      return  [
@@ -536,7 +532,6 @@ var fakeDataService = function (){
             }
         ]
     }
-
 
     ThreeDSPs_AllCreateAttributesTheSame = function(){
 
@@ -1549,7 +1544,6 @@ var fakeDataService = function (){
         ]
     }
 
-
     FourDSPs_AllURlFormatsTheSame = function(){
 
         return [
@@ -1914,6 +1908,8 @@ var fakeDataService = function (){
             }
         ]
     }
+
+
 
     return{
         TwoDSPs_SameNumberDifferentData:TwoDSPs_SameNumberDifferentData,
