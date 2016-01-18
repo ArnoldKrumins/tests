@@ -1550,6 +1550,371 @@ var categoryDataService = function (){
     }
 
 
+    FourDSPs_AllURlFormatsTheSame = function(){
+
+        return [
+            {
+                "Id": 412,
+                "Name": "Sociomantic",
+                "NoUserMatchingThreshold": 0,
+                "UserMatchingThreshold": 0,
+                "CanAuctionTypeBeSet": false,
+                "AuctionType": 2,
+                "GeoFilterId": null,
+                "SiteProtection": null,
+                "OnlyRunPrivateDeals": false,
+                "ApprovedCategories": [],
+                "RejectedCategories": [
+                    {
+                        "Id": 246,
+                        "ParentId": null,
+                        "Category": "Adult",
+                        "Selected": false
+                    }
+                ],
+                "BidRequestSettings": {
+                    "Id": 195,
+                    "IncludeSiteId": true,
+                    "IncludeSiteName": false,
+                    "IncludePublisherName": true,
+                    "IncludeSiteContentCategories": false,
+                    "IncludePageContentCategories": false,
+                    "IncludeIpAddress": true,
+                    "IncludeUserAgentString": true,
+                    "IncludeCountry": true,
+                    "FixedPageUrl": "",
+                    "IncludePageUrl": 0
+                },
+                "RtbCreativeAttributeIds": [],
+                "Selected": true,
+                "$$hashKey": "object:30"
+            },
+            {
+                "Id": 415,
+                "Name": "DoubleClick Bid Manager",
+                "NoUserMatchingThreshold": 0,
+                "UserMatchingThreshold": 0,
+                "CanAuctionTypeBeSet": false,
+                "AuctionType": 2,
+                "GeoFilterId": null,
+                "SiteProtection": null,
+                "OnlyRunPrivateDeals": false,
+                "ApprovedCategories": [],
+                "RejectedCategories": [
+                    {
+                        "Id": 246,
+                        "ParentId": null,
+                        "Category": "Adult",
+                        "Selected": false
+                    }
+                ],
+                "BidRequestSettings": {
+                    "Id": 198,
+                    "IncludeSiteId": true,
+                    "IncludeSiteName": false,
+                    "IncludePublisherName": true,
+                    "IncludeSiteContentCategories": false,
+                    "IncludePageContentCategories": false,
+                    "IncludeIpAddress": true,
+                    "IncludeUserAgentString": true,
+                    "IncludeCountry": true,
+                    "FixedPageUrl": null,
+                    "IncludePageUrl": 0
+                },
+                "RtbCreativeAttributeIds": [],
+                "Selected": true,
+                "$$hashKey": "object:31"
+            },
+            {
+                "Id": 416,
+                "Name": "AdPilot",
+                "NoUserMatchingThreshold": 0,
+                "UserMatchingThreshold": 0,
+                "CanAuctionTypeBeSet": false,
+                "AuctionType": 2,
+                "GeoFilterId": null,
+                "SiteProtection": null,
+                "OnlyRunPrivateDeals": false,
+                "ApprovedCategories": [],
+                "RejectedCategories": [
+                    {
+                        "Id": 246,
+                        "ParentId": null,
+                        "Category": "Adult",
+                        "Selected": false
+                    }
+                ],
+                "BidRequestSettings": {
+                    "Id": 199,
+                    "IncludeSiteId": true,
+                    "IncludeSiteName": false,
+                    "IncludePublisherName": true,
+                    "IncludeSiteContentCategories": false,
+                    "IncludePageContentCategories": false,
+                    "IncludeIpAddress": true,
+                    "IncludeUserAgentString": true,
+                    "IncludeCountry": true,
+                    "FixedPageUrl": null,
+                    "IncludePageUrl": 0
+                },
+                "RtbCreativeAttributeIds": [],
+                "Selected": true,
+                "$$hashKey": "object:32"
+            },
+            {
+                "Id": 417,
+                "Name": "Adform",
+                "NoUserMatchingThreshold": 0,
+                "UserMatchingThreshold": 0,
+                "CanAuctionTypeBeSet": false,
+                "AuctionType": 2,
+                "GeoFilterId": null,
+                "SiteProtection": null,
+                "OnlyRunPrivateDeals": false,
+                "ApprovedCategories": [],
+                "RejectedCategories": [
+                    {
+                        "Id": 246,
+                        "ParentId": null,
+                        "Category": "Adult",
+                        "Selected": false
+                    }
+                ],
+                "BidRequestSettings": {
+                    "Id": 200,
+                    "IncludeSiteId": true,
+                    "IncludeSiteName": false,
+                    "IncludePublisherName": true,
+                    "IncludeSiteContentCategories": false,
+                    "IncludePageContentCategories": false,
+                    "IncludeIpAddress": true,
+                    "IncludeUserAgentString": true,
+                    "IncludeCountry": true,
+                    "FixedPageUrl": null,
+                    "IncludePageUrl": 0
+                },
+                "RtbCreativeAttributeIds": [],
+                "Selected": true,
+                "$$hashKey": "object:33"
+            }
+        ]
+
+    }
+
+    FourDSPs_AllURLFormatsDifferent = function(){
+
+       return [
+            {
+                "Id": 412,
+                "Name": "Sociomantic",
+                "NoUserMatchingThreshold": 0,
+                "UserMatchingThreshold": 0,
+                "CanAuctionTypeBeSet": false,
+                "AuctionType": 2,
+                "GeoFilterId": null,
+                "SiteProtection": null,
+                "OnlyRunPrivateDeals": false,
+                "ApprovedCategories": [],
+                "RejectedCategories": [
+                    {
+                        "Id": 246,
+                        "ParentId": null,
+                        "Category": "Adult",
+                        "Selected": false
+                    }
+                ],
+                "BidRequestSettings": {
+                    "Id": 195,
+                    "IncludeSiteId": true,
+                    "IncludeSiteName": false,
+                    "IncludePublisherName": true,
+                    "IncludeSiteContentCategories": false,
+                    "IncludePageContentCategories": false,
+                    "IncludeIpAddress": true,
+                    "IncludeUserAgentString": true,
+                    "IncludeCountry": true,
+                    "FixedPageUrl": "",
+                    "IncludePageUrl": 2
+                },
+                "RtbCreativeAttributeIds": [],
+                "Selected": true,
+                "$$hashKey": "object:30"
+            },
+            {
+                "Id": 415,
+                "Name": "DoubleClick Bid Manager",
+                "NoUserMatchingThreshold": 0,
+                "UserMatchingThreshold": 0,
+                "CanAuctionTypeBeSet": false,
+                "AuctionType": 2,
+                "GeoFilterId": null,
+                "SiteProtection": null,
+                "OnlyRunPrivateDeals": false,
+                "ApprovedCategories": [],
+                "RejectedCategories": [
+                    {
+                        "Id": 246,
+                        "ParentId": null,
+                        "Category": "Adult",
+                        "Selected": false
+                    }
+                ],
+                "BidRequestSettings": {
+                    "Id": 198,
+                    "IncludeSiteId": true,
+                    "IncludeSiteName": false,
+                    "IncludePublisherName": true,
+                    "IncludeSiteContentCategories": false,
+                    "IncludePageContentCategories": false,
+                    "IncludeIpAddress": true,
+                    "IncludeUserAgentString": true,
+                    "IncludeCountry": true,
+                    "FixedPageUrl": null,
+                    "IncludePageUrl": 1
+                },
+                "RtbCreativeAttributeIds": [],
+                "Selected": true,
+                "$$hashKey": "object:31"
+            },
+            {
+                "Id": 416,
+                "Name": "AdPilot",
+                "NoUserMatchingThreshold": 0,
+                "UserMatchingThreshold": 0,
+                "CanAuctionTypeBeSet": false,
+                "AuctionType": 2,
+                "GeoFilterId": null,
+                "SiteProtection": null,
+                "OnlyRunPrivateDeals": false,
+                "ApprovedCategories": [],
+                "RejectedCategories": [
+                    {
+                        "Id": 246,
+                        "ParentId": null,
+                        "Category": "Adult",
+                        "Selected": false
+                    }
+                ],
+                "BidRequestSettings": {
+                    "Id": 199,
+                    "IncludeSiteId": true,
+                    "IncludeSiteName": false,
+                    "IncludePublisherName": true,
+                    "IncludeSiteContentCategories": false,
+                    "IncludePageContentCategories": false,
+                    "IncludeIpAddress": true,
+                    "IncludeUserAgentString": true,
+                    "IncludeCountry": true,
+                    "FixedPageUrl": null,
+                    "IncludePageUrl": 0
+                },
+                "RtbCreativeAttributeIds": [],
+                "Selected": true,
+                "$$hashKey": "object:32"
+            },
+            {
+                "Id": 417,
+                "Name": "Adform",
+                "NoUserMatchingThreshold": 0,
+                "UserMatchingThreshold": 0,
+                "CanAuctionTypeBeSet": false,
+                "AuctionType": 2,
+                "GeoFilterId": null,
+                "SiteProtection": null,
+                "OnlyRunPrivateDeals": false,
+                "ApprovedCategories": [],
+                "RejectedCategories": [
+                    {
+                        "Id": 246,
+                        "ParentId": null,
+                        "Category": "Adult",
+                        "Selected": false
+                    }
+                ],
+                "BidRequestSettings": {
+                    "Id": 200,
+                    "IncludeSiteId": true,
+                    "IncludeSiteName": false,
+                    "IncludePublisherName": true,
+                    "IncludeSiteContentCategories": false,
+                    "IncludePageContentCategories": false,
+                    "IncludeIpAddress": true,
+                    "IncludeUserAgentString": true,
+                    "IncludeCountry": true,
+                    "FixedPageUrl": "http://www.google.com",
+                    "IncludePageUrl": 3
+                },
+                "RtbCreativeAttributeIds": [],
+                "Selected": true,
+                "$$hashKey": "object:33"
+            }
+        ]
+    }
+
+    TwoDSPs_URLFormatsTwoDifferent = function(){
+
+        return [
+            {
+                "Id": 1843,
+                "Name": "Admeta Audio and Video Buyer Test",
+                "NoUserMatchingThreshold": 0,
+                "UserMatchingThreshold": 0,
+                "CanAuctionTypeBeSet": true,
+                "AuctionType": 2,
+                "GeoFilterId": null,
+                "SiteProtection": null,
+                "OnlyRunPrivateDeals": false,
+                "ApprovedCategories": [],
+                "RejectedCategories": [],
+                "BidRequestSettings": {
+                    "Id": 1631,
+                    "IncludeSiteId": true,
+                    "IncludeSiteName": true,
+                    "IncludePublisherName": true,
+                    "IncludeSiteContentCategories": true,
+                    "IncludePageContentCategories": true,
+                    "IncludeIpAddress": true,
+                    "IncludeUserAgentString": true,
+                    "IncludeCountry": true,
+                    "FixedPageUrl": "http://www.admeta.com",
+                    "IncludePageUrl": 3
+                },
+                "RtbCreativeAttributeIds": [],
+                "Selected": true,
+                "$$hashKey": "object:39"
+            },
+            {
+                "Id": 7183,
+                "Name": "The Trade Desk",
+                "NoUserMatchingThreshold": 0,
+                "UserMatchingThreshold": 0,
+                "CanAuctionTypeBeSet": false,
+                "AuctionType": 2,
+                "GeoFilterId": null,
+                "SiteProtection": null,
+                "OnlyRunPrivateDeals": false,
+                "ApprovedCategories": [],
+                "RejectedCategories": [],
+                "BidRequestSettings": {
+                    "Id": 6991,
+                    "IncludeSiteId": true,
+                    "IncludeSiteName": true,
+                    "IncludePublisherName": true,
+                    "IncludeSiteContentCategories": true,
+                    "IncludePageContentCategories": true,
+                    "IncludeIpAddress": true,
+                    "IncludeUserAgentString": true,
+                    "IncludeCountry": true,
+                    "FixedPageUrl": null,
+                    "IncludePageUrl": 1
+                },
+                "RtbCreativeAttributeIds": [],
+                "Selected": true,
+                "$$hashKey": "object:42"
+            }
+        ]
+    }
+
     return{
         TwoDSPs_SameNumberDifferentData:TwoDSPs_SameNumberDifferentData,
         TwoDSPs_AllDataDifferent:TwoDSPs_AllDataDifferent,
@@ -1558,7 +1923,11 @@ var categoryDataService = function (){
         ThreeDSPs_AllCreateAttributesTheSame:ThreeDSPs_AllCreateAttributesTheSame,
         ThreeDSPs_AllCreativeAttributesDifferent:ThreeDSPs_AllCreativeAttributesDifferent,
         FiveDSPs_FourCreativesTheSameOneDifferent:FiveDSPs_FourCreativesTheSameOneDifferent,
-        EightDSPs_EightCreativeAttributesTheSame:EightDSPs_EightCreativeAttributesTheSame
+        EightDSPs_EightCreativeAttributesTheSame:EightDSPs_EightCreativeAttributesTheSame,
+        FourDSPs_AllURlFormatsTheSame:FourDSPs_AllURlFormatsTheSame,
+        FourDSPs_AllURLFormatsDifferent:FourDSPs_AllURLFormatsDifferent,
+        TwoDSPs_URLFormatsTwoDifferent:TwoDSPs_URLFormatsTwoDifferent
+
     }
 
 }();
