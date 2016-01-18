@@ -316,6 +316,7 @@ var categoryDataService = function (){
 
 
     ThreeRTBs_AllDataTheSame = function(){
+
      return  [
             {
                 "Id": 412,
@@ -426,9 +427,11 @@ var categoryDataService = function (){
                 "$$hashKey": "object:794"
             }
         ]
+
     }
 
     ThreeRTBs_TwoTheSameOneDifferent = function(){
+
        return  [
             {
                 "Id": 412,
@@ -536,6 +539,7 @@ var categoryDataService = function (){
 
 
     ThreeDSPs_AllCreateAttributesTheSame = function(){
+
       return   [
             {
                 "Id": 415,

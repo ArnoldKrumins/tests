@@ -9,6 +9,10 @@ var dspDataValidator = function(){
         });
     }
 
+    function getCreativeAttributesIds(data,value){
+        return _.map(data,value);
+    }
+
     return{
 
         AreAdCategoriesTheSame : function(data){
@@ -18,8 +22,9 @@ var dspDataValidator = function(){
         },
 
 
-        AreCreativeAttributesTheSame : function(){
-            var result = _.uniqWith(getIds(data,'RtbCreativeAttributeIds'),_.isEqual);
+        AreCreativeAttributesTheSame : function(data){
+            var result = _.uniqWith(getCreativeAttributesIds(data,'RtbCreativeAttributeIds'),_.isEqual);
+            return (result.length === 1) ? true : false;
         }
 
     }
