@@ -29,8 +29,8 @@ describe("Two DSPs where Accepted and Rejected Category count is the same by con
         var rejected = _.uniqWith(getIds(data,'RejectedCategories'),_.isEqual);
         expect(approved.length + rejected.length).toBe(4);
 
-        var valid = dspDataValidator.AreAdCategoriesTheSame(data);
-        expect(valid).toBe(false);
+        var thesame = dspDataValidator.AreAdCategoriesTheSame(data);
+        expect(thesame).toBe(false);
     });
 
 
@@ -53,8 +53,8 @@ describe("Two DSPs where Accepted and Rejected Category Data are ALL different",
         var rejected = _.uniqWith(getIds(data,'RejectedCategories'),_.isEqual);
         expect(approved.length + rejected.length).toBe(4);
 
-        var valid = dspDataValidator.AreAdCategoriesTheSame(data);
-        expect(valid).toBe(false);
+        var thesame = dspDataValidator.AreAdCategoriesTheSame(data);
+        expect(thesame).toBe(false);
 
     });
 
@@ -72,12 +72,12 @@ describe("Three DSPs where Accepted and Rejected Category Data is the Same", fun
 
     it("should be 2 as all 3 categories are the same", function() {
         var data = categoryDataService.ThreeRTBs_AllDataTheSame()
-        var approved = _.uniqWith(_.map(data, 'ApprovedCategories'), _.isEqual);
-        var rejected = _.uniqWith(_.map(data, 'RejectedCategories'), _.isEqual);
+        var approved = _.uniqWith(getIds(data, 'ApprovedCategories'), _.isEqual);
+        var rejected = _.uniqWith(getIds(data, 'RejectedCategories'), _.isEqual);
         expect(approved.length + rejected.length).toBe(2);
 
-        var valid = dspDataValidator.AreAdCategoriesTheSame(data);
-        expect(valid).toBe(true);
+        var thesame = dspDataValidator.AreAdCategoriesTheSame(data);
+        expect(thesame).toBe(true);
 
     });
 

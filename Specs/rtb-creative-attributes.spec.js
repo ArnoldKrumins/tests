@@ -3,7 +3,7 @@
  */
 
 function getIds(data,value){
-    return _.map(_.map(data,value));
+    return _.map(data,value);
 }
 
 describe("Three DSPs where Creative Attributes are the same", function() {
@@ -14,12 +14,11 @@ describe("Three DSPs where Creative Attributes are the same", function() {
     });
 
 
-    it("should be 3 as all 3 categories are different", function() {
+    it("should be 1 as all 3 categories are the same", function() {
 
         var data = categoryDataService.ThreeDSPs_AllCreateAttributesTheSame();
         var result = _.uniqWith(getIds(data,'RtbCreativeAttributeIds'),_.isEqual);
-        //var result = _.difference(getIds(data,'RtbCreativeAttributeIds'));
-        expect(result.length).toBe(3);
+        expect(result.length).toBe(1);
 
         //var valid = dspDataValidator.AreAdCategoriesTheSame(data);
         //expect(valid).toBe(false);
@@ -42,7 +41,6 @@ describe("Three DSPs where Creative Attributes all different", function() {
 
         var data = categoryDataService.ThreeDSPs_AllCreativeAttributesDifferent();
         var result = _.uniqWith(getIds(data,'RtbCreativeAttributeIds'),_.isEqual);
-        //var result = _.difference(getIds(data,'RtbCreativeAttributeIds'));
         expect(result.length).toBe(3);
 
         //var valid = dspDataValidator.AreAdCategoriesTheSame(data);
