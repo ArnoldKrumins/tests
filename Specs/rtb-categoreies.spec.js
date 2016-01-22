@@ -2,10 +2,6 @@
  * Created by akrumins on 15/01/2016.
  */
 
-beforeEach(function(){
-   console.log('create');
-});
-
 
 function getIds(data,value){
     return _.map(_.map(data,value),function(d){
