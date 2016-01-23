@@ -20,8 +20,8 @@ module.exports = function(config) {
         'Scripts/lodash.js',
         'app/*.js',
         'Data/*.js',
-        'Specs/*spec.js',
-        'Specs/directives/*spec.js'
+        'Specs/*spec.js'
+        //'Specs/directives/*spec.js'
     ],
 
 
