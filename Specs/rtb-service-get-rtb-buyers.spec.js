@@ -25,7 +25,7 @@ describe("Ensure when getting RTB data the publisher paramater value is handled 
 
     });
 
-    it("should be 1234 as the value is a valid 'Sub Publisher' parameter object", function() {
+    it("should be id:1234 as the value is a valid 'Sub Publisher' parameter object", function() {
 
         var value =  {Id: 2273, PublisherType: 1, Name: 'Malaysiastylo.com_block Lazada'};
         var id = conditionUnderTest(value);
