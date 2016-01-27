@@ -3,6 +3,69 @@
  */
 var fakeDataService = function (){
 
+    OneBuyer = function(){
+
+        return { "Id": 415,
+            "Name": "DoubleClick Bid Manager",
+            "NoUserMatchingThreshold": 0,
+            "UserMatchingThreshold": 0,
+            "CanAuctionTypeBeSet": false,
+            "AuctionType": 2,
+            "GeoFilterId": null,
+            "SiteProtection": null,
+            "OnlyRunPrivateDeals": false,
+            "ApprovedCategories": [
+            {
+                "Id": 2,
+                "ParentId": 1,
+                "Category": "Arts and Entertainment/Animation and Comics",
+                "Selected": false,
+                "$$hashKey": "object:216"
+            },
+            {
+                "Id": 4,
+                "ParentId": 1,
+                "Category": "Arts and Entertainment/Awards",
+                "Selected": false,
+                "$$hashKey": "object:218"
+            },
+            {
+                "Id": 6,
+                "ParentId": 1,
+                "Category": "Arts and Entertainment/Fashion and Modeling",
+                "Selected": false,
+                "$$hashKey": "object:220"
+            }
+        ],
+            "RejectedCategories": [
+            {
+                "Id": 246,
+                "ParentId": null,
+                "Category": "Adult",
+                "Selected": false,
+                "$$hashKey": "object:984"
+            }
+        ],
+            "BidRequestSettings": {
+            "Id": 198,
+                "IncludeSiteId": true,
+                "IncludeSiteName": false,
+                "IncludePublisherName": true,
+                "IncludeSiteContentCategories": false,
+                "IncludePageContentCategories": false,
+                "IncludeIpAddress": true,
+                "IncludeUserAgentString": true,
+                "IncludeCountry": true,
+                "FixedPageUrl": null,
+                "IncludePageUrl": 0
+        },
+        "RtbCreativeAttributeIds": [],
+            "Selected": true,
+            "$$hashKey": "object:31"
+    }
+
+    }
+
     TwoDSPs_SameNumberDifferentData = function(){
        return  [
             {
@@ -1912,6 +1975,8 @@ var fakeDataService = function (){
 
 
     return{
+        OneBuyer: OneBuyer,
+        Buyers:EightDSPs_EightCreativeAttributesTheSame,
         TwoDSPs_SameNumberDifferentData:TwoDSPs_SameNumberDifferentData,
         TwoDSPs_AllDataDifferent:TwoDSPs_AllDataDifferent,
         ThreeRTBs_AllDataTheSame:ThreeRTBs_AllDataTheSame,

@@ -7,7 +7,8 @@ function conditionUnderTest(value){
    return (angular.isDefined(value) && value !== null) ? value.Id : null;
 }
 
-describe("Ensure when getting RTB data the publisher paramater value is handled correctly", function() {
+describe("Ensure when getting RTB data the publisher parameter value is handled correctly", function() {
+
 
     it("should be null as the value is null", function() {
 
@@ -17,6 +18,7 @@ describe("Ensure when getting RTB data the publisher paramater value is handled 
 
     });
 
+
     it("should be null as the value is 'undefined'", function() {
 
         var value = undefined;
@@ -24,6 +26,7 @@ describe("Ensure when getting RTB data the publisher paramater value is handled 
         expect(id).toBe(null);
 
     });
+
 
     it("should be id:1234 as the value is a valid 'Sub Publisher' parameter object", function() {
 
